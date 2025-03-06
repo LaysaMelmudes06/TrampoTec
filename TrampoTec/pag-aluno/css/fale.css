@@ -1,0 +1,132 @@
+body {
+    background-image: url(../img/bg-contato-aluno.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    box-shadow: 0px 0px 80px 5px rgba(0, 0, 0, 0.518);
+}
+
+.container {
+    width: 100%;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 100px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding-bottom: 25px;
+
+}
+
+.titulo {
+    border-bottom: 2px solid #9ab4ff;
+    width: 50%;
+    margin: 15px;
+}
+
+textarea,
+input,
+select:focus {
+    outline: none;
+}
+
+.formulario {
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.box-input {
+    background-color: #114baf;
+    width: 350px;
+    margin: 10px;
+    margin-left: 0px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box-input input {
+    width: 250px;
+}
+
+input {
+    background-color: #114baf;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+textarea {
+    background-color: #4e8af1cf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 350px;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #fff;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+}
+
+select {
+    background-color: #114baf;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    width: 100px;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: #fff;
+    color: #062863;
+    font-weight: 800;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 25%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #051b42;
+    color: white;
+    border: 1px solid white;
+    font-weight: 800;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 25%;
+    cursor: pointer;
+}
+
+.icone {
+    width: 89vh;
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: -3;
+}
+

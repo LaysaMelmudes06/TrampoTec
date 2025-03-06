@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navba.css">
+    <link rel="stylesheet" href="css/hom.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/servico.css">
+    <link rel="stylesheet" href="css/descricao-alphatec.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/foote.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* Estilos para o modal e overlay */
+        #modal {
+            display: none;
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) ;
+            width: 400px;
+            min-height: 300px;
+            height: auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            transition: transform 0.4s, top 0.4s;
+        }
+      
+        #modal .align-itens{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        #modal .align-itens .btn{
+            padding: 10px 0 ;
+            border: 0;
+            border-radius: 4px;
+            outline: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            color: white;
+            background-color: #4caf50;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-top: 50px;
+            width: 90%;
+            transition: 0.3s all ease-in-out ;
+
+
+        }
+        #modal .align-itens .btn:hover{
+            background-color: #4caf4fe8;
+            transition: 0.3s all ease-in-out ;
+        }
+        #modal .align-itens .titulo{
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        #modal .align-itens .titulo1{
+            font-size: 1.1rem;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        #modal .align-x .btn1{
+            font-size: 2.2rem;
+        }
+        #modal .align-img{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #modal .align-img img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: -50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        #modal .align-x{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 20px;
+
+        }
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        /* Estilos para o botão de fechar */
+        #closeBtn {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+        }
+        
+        #modal2 {
+            display: none;
+            
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) ;
+            width: 410px;
+            min-height: 330px;
+            height: auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            transition: transform 0.4s, top 0.4s;
+        }
+      
+        #modal2 .align-itens{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        #modal2 .align-itens .btn{
+            padding: 10px 0 ;
+            border: 0;
+            border-radius: 4px;
+            outline: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            color: white;
+            background-color: #4caf50;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-top: 50px;
+            width: 90%;
+            transition: 0.3s all ease-in-out ;
+
+        }
+        #modal2 .align-itens .btn:hover{
+            background-color: #4caf4fe8;
+            transition: 0.3s all ease-in-out ;
+        }
+        #modal2 .align-itens .titulo{
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        #modal2 .align-itens .titulo1{
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        #modal2 .align-x .btn1{
+            font-size: 2.2rem;
+        }
+        #modal2 .align-img{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #modal2 .align-img img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: -50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        #modal2 .align-x{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 20px;
+
+        }
+
+        #overlay2 {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        /* Estilos para o botão de fechar */
+        #closeBtn2 {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay"></div>
+
+    <!-- Modal -->
+    <div id="modal">
+        <div class="align-img">
+            <img src="img/check.png" alt="">
+        </div>
+        <div class="align-x">
+            <span id="closeBtn" class="btn1" onclick="fecharModal()">&times;</span>
+        </div>
+        <div class="align-itens">
+            <h4 class="titulo">Seja bem vindo</h4>
+            
+            <p class="titulo1">Cadastro realizado com sucesso!!</p>
+            <p class="titulo1">Pronto para efetuar seu login</p>
+            <button class="btn" onclick="fecharModal()">OK</button>
+        </div>
+    </div>
+    <div id="overlay2"></div>
+
+    <!-- Modal -->
+    <div id="modal2">
+        <div class="align-img">
+            <img src="img/check.png" alt="">
+        </div>
+        <div class="align-x">
+            <span id="closeBtn2" class="btn1" onclick="fecharModal2()">&times;</span>
+        </div>
+            <div class="align-itens">
+                <h4 class="titulo">Seja bem vindo</h4>
+              
+                <p class="titulo1">Cadastro realizado com sucesso!!</p>
+                <p class="titulo1">Aguarde o administrador aceitar sua solicitação de acesso!!</p>
+                <button class="btn" onclick="fecharModal2()">OK</button>
+         </div>
+    </div>
+
+    <nav id="nav-bar" onclick="nav()">
+        <ul>
+            <img src="img/TrampoTecSemFundo.png" alt="">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#empresa">Empresa</a></li>
+            <li><a href="#contato">Contatos</a></li>
+            <a class="botao-login" href="tela-login/login-one-page.php">Login</a>
+        </ul>
+    </nav>
+
+    <main  id="home">
+        <div  class="texto-home">
+            <h1> INGRESSE COM FACILIDADE NO MERCADO DE
+            <span> TRABALHO</span></h1>
+            <br> 
+            <button class="saiba-mais">SAIBA MAIS</button>
+            <div class="imagem-astro">
+            <img  src="img/2.png" alt="">
+        </div>
+        </div>
+       
+        <div  class="imagem-home">
+            <img   src="img/4.png" alt="">
+        </div>
+        
+
+        
+    </main>
+
+    <section  id="sobre" class="sobre">
+        <img   class="img-fundo-sobre" src="img/13.png" alt="">
+        <div class="align-itens">
+            <p>Uma plataforma digital responsiva  que conecta os alunos 
+                da etec ao mercado de trabalho.
+            </p>
+            <img src="img/14-removebg-preview.png" alt="">
+        </div>
+        <div class="align-imagens">
+            <img src="img/icone 3.png" alt="">
+        </div>
+     
+    </section>
+
+    <section id="servicos">
+        <div class="titulo-servicos"><h3>SERVIÇO DE <span class="ponta">PONTA</span></h3></div>
+        
+        <div class="fundo-roxo"> <img src="img/azulescuro.webp" alt="">  </div>
+            
+        <div  class="hidden" id="align-card">
+            <div class="hidden"  id="card">
+                <div class="fundo-icon">
+                    <i class="fa-solid fa-building-shield fa-lg icon-secure" style="color:#474d80"></i>
+                </div>
+                <div class="texto-card">
+                    <h4>PLATAFORMA</h4>
+                    <h4>SEGURA</h4>
+                </div>
+            </div>
+           
+            <div class="hidden" id="card">
+                <div class="fundo-icon">  
+                    <i class="fa-solid fa-hands-bound fa-lg icon-mao" style="color:#474d80"  ></i>
+                </div>
+                <div class="texto-card">
+                    <h4>DADOS</h4>
+                    <h4>PROTEGIDOS</h4>
+                </div>
+            </div>
+            
+
+            <div class="hidden" id="card">
+                <div class="fundo-icon">
+                    <i class="icon-notificacao fa-solid fa-sliders" style="color:#474d80"></i>
+                </div>
+                <div class="texto-card">
+                    <h4>SERVIÇOS DE </h4>
+                    <h4>FILTRAGEM</h4>
+                </div>
+            </div>
+        </div>
+          
+ 
+    </section>
+
+
+    <section id="empresa" class="descricao-alphatec">
+        <div  class="align-imagens">
+            <img  class="logo-alpha" src="img/fundotrampotec.png">
+          
+        </div>
+
+        <div class="textos-alphatec">
+             <div class="alinhar-texto">
+                <h4>Plataforma criada pela empresa AlphaTechnology, lider do ramo de tecnologia e
+                     especializada em desenvolver softwares para empresas de distintos setores e portes</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contato" class="area-contato">
+        <div class="informacoes-contato">
+
+            <h2 class="titulo">Entre em contato</h2>
+
+            <p class="subtitulo">Entre em contato com a empresa desenvolvedora para esclarecimento</p>
+
+            <span class="informacao"><i class="fa-solid fa-envelope"></i><p>AlphaTechnology@gmail.com</p></span>
+            <span class="informacao"><i class="fa-solid fa-mobile"></i><p>+123-456-7890</p></span>
+            <span class="informacao"><i class="fa-solid fa-globe"></i><p>AlphaTechnology.com</p></span>
+            <span class="informacao"><i class="fa-solid fa-location-dot"></i><p>Etec Guianases</p></span>
+
+            <img src="img/TrampoTecSemFundo.png">
+        </div>
+
+        <div class="inputs-contato">
+            <form>
+                <div class="alinhamento-textos-contatos">
+                    
+                    <div class="inputs-textos-contato">
+                        <label>Nome*</label>                
+                        <input type="text">   
+                        <br>           
+                        <label>Sobrenome*</label>
+                        <input type="text">
+                    </div>
+
+                    <div  class="inputs-textos-contato">
+                        <label>Email*</label>             
+                        <input type="email">     
+                        <br>    
+                        <label>Telefone*</label>
+                        <input type="tell">
+                    </div>
+                </div>
+
+                <div class="alinhamento-caixa-botao">  
+                    <label>Mensagem*</label>
+                    <textarea rows="1" cols="5" placeholder="escreva sua mensagem aqui...">
+                    
+                    </textarea>
+
+                    <a href="#"><button>ENVIAR</button></a>
+               </div>   
+            </form>
+        </div class="formulario-contato">
+    </section>
+
+    <footer class="footer">
+        <span class="icons-footer"> 
+            <a href=""><i class="fa-brands fa-linkedin"></i></a> 
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+        </span>
+        <span class="email-footer">@AlphaTechnology</span>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/1c065add65.js" crossorigin="anonymous"></script>
+
+    <script src="./js/one-page.js"></script>
+    <script>
+        // Função para abrir o modal
+        function abrirModal() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        // Função para fechar o modal
+        function fecharModal() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        // Verificar se o CPF já está cadastrado via GET
+        let urlParams = new URLSearchParams(window.location.search);
+        let cadastroFeito = urlParams.get('cadastroFeito');
+
+        if (cadastroFeito === 'true') {
+            abrirModal();
+        }
+    </script>
+    <script>
+        // Função para abrir o modal
+        function abrirModal2() {
+            document.getElementById('overlay2').style.display = 'block';
+            document.getElementById('modal2').style.display = 'block';
+        }
+
+        // Função para fechar o modal
+        function fecharModal2() {
+            document.getElementById('overlay2').style.display = 'none';
+            document.getElementById('modal2').style.display = 'none';
+        }
+
+        // Verificar se o CPF já está cadastrado via GET
+        let urlParamss = new URLSearchParams(window.location.search);
+        let cadastroEmpresaFeito = urlParamss.get('cadastroEmpresaFeito');
+
+        if (cadastroEmpresaFeito === 'true') {
+            abrirModal2();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+.formulario-etec {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    animation: 800ms ease-out anim-form;
+}
+
+.formulario-etec form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    padding: 40px 150px;
+    align-items: center;
+
+}
+
+main {
+
+    margin-left: 30%;
+}
+
+.text-green {
+    color: green;
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+.text-danger {
+    color: red;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.btn {
+    background-color: rgb(10, 10, 87);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 70%;
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    animation: 800ms linear trans;
+    transition: 200ms linear;
+}
+
+.btn:hover {
+    background-color: #1a3b9e;
+    scale: 1.02;
+
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.input-box input {
+    all: unset;
+    color: black;
+    padding: 1rem;
+    border: 2px solid #1d44b8;
+    border-radius: 10px;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 60%;
+    animation: 1500ms ease trans;
+}
+
+.input-box input:focus {
+    border: 2px solid #1d44b8;
+}
+
+.input-box input:is(:focus, :valid)~.label-anim {
+    transform: translateY(-140%) scale(0.7);
+    background-color: #ffffff;
+    padding-inline: 0.3rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    left: 20%;
+}
+
+.label-anim {
+    position: absolute;
+    left: 20%;
+    color: black;
+    pointer-events: none;
+    transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 0.8rem;
+    animation: 1500ms ease transLabel;
+}
+
+.input-select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.sub-form {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    animation: 2000ms ease transLabel;
+}
+
+.input-select select {
+    border-radius: 10px;
+    border: 2px solid #1a3b9e;
+    width: 68%;
+    padding: 1rem;
+    font-size: 1rem;
+    animation: 1500ms ease trans;
+}
+
+
+.secao-cadastro a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 25%;
+    font-size: 1.5rem;
+    margin-left: 0;
+
+}
+
+.secao-cadastro {
+    margin-bottom: 30px;
+    margin-left: 6%;
+}
+
+#icon-titulo {
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid red;
+    border-radius: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border: 2px solid red;
+    transition: 0.300s ease-in-out;
+    margin-right: 5px;
+}
+
+#icon-titulo:hover {
+    font-size: 25px;
+    color: red;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid red;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.secao-adicionar {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+#icon-adicionar {
+    background-color: #555cb3;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+
+}
+
+#icon-btn {
+    background-color: red;
+    border-radius: 100%;
+    padding: 5px 5px 6px 6px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+#campos,
+#area {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+#campos input {
+    padding: 4px;
+    font-size: 1rem;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+#area,
+#area {
+    display: flex;
+    flex-direction: column;
+}
+
+#area input {
+    padding: 4px;
+    font-size: 1rem;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+@keyframes trans {
+    0% {
+        opacity: 0%;
+        transform: translateY(-200%);
+    }
+
+    50% {
+        opacity: 25%;
+    }
+
+    60% {
+        opacity: 50%;
+    }
+
+    70% {
+        opacity: 70%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+
+
+}
+
+@keyframes transLabel {
+    0% {
+        opacity: 0%;
+        transform: translateY(-600%);
+    }
+
+    50% {
+        opacity: 25%;
+    }
+
+    60% {
+        opacity: 50%;
+    }
+
+    70% {
+        opacity: 70%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+
+
+}
+
+@keyframes anim-form {
+    0% {
+        opacity: 0%;
+        transform: translateY(-15%);
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+
+}

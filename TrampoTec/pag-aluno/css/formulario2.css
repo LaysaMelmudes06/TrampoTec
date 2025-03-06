@@ -1,0 +1,111 @@
+.align-tudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+  border-radius: 20px;
+  width: 450px;
+  height: 590px;
+  margin-top: 5%;
+  gap: 10px;
+}
+.align-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.align-button button {
+  padding: 11px;
+  border-radius: 15px;
+  border: 1px solid #0a3580;
+  background-color: #0a3580;
+  width: 200px;
+  font-weight: 600;
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
+.align-button button:hover {
+  background-color: white;
+  color: #0a3580;
+  transition: 0.2s all ease-in-out;
+}
+.align-button .link:hover {
+  background-color: white;
+  color: #4caf50;
+  transition: 0.2s all ease-in-out;
+}
+.align-button .link {
+  padding: 11px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 1px solid #4caf50;
+  background-color: #4caf50;
+  width: 200px;
+  font-weight: 600;
+  color: white;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+select {
+  width: 250px;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+thead {
+  color: rgb(70, 70, 70);
+  font-weight: 600;
+}
+
+th {
+  text-align: center;
+  padding-top: 10px;
+}
+
+table {
+  background-color: rgba(247, 247, 247, 0.641);
+  border-radius: 20px;
+}
+
+table td {
+  padding: 20px 5px 30px 5px;
+  text-align: center;
+  color: rgb(94, 94, 94);
+}
+label {
+  text-align: start;
+  width: 55%;
+  font-weight: 600;
+}

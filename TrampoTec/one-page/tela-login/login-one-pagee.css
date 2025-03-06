@@ -1,0 +1,113 @@
+body{
+  background-color:#1d2357; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cima{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15%;
+}
+
+.baixo{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+}
+
+
+.cards-meio{
+  display: flex;
+  position:fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card{  
+  width:750px;
+  height: 570px;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.linha{
+  height: 100%;
+  width:2px;
+  background-color:rgb(138, 138, 138);
+}
+
+
+.card-itens{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+}
+
+
+.card .imagens{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 250px;
+}
+
+.logo{
+width: 160px;
+height:60px;
+}
+
+.imagem-ilustra{
+  width: 1000px;
+  height: 400px;
+    object-fit: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+  
+
+
+.titulo-agendar{
+display: flex;
+justify-content: center;
+font-size: 22px;
+font-weight: bold;
+}
+
+.barra-agendar button{
+border-radius: 12px;
+background-color: rgb(74, 74, 138);
+width: 100%;
+height: 40px;
+border: none;  
+color: white;
+cursor: pointer;
+transition: 0.10s ease-in-out;
+font-size: 15px;
+font-weight: 550;
+letter-spacing: 0.9px;
+}
+
+.botoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+  
+.barra-agendar button:hover{
+
+  background-color: white;
+border: 2px solid orangered;  
+color: orangered;
+  }
+

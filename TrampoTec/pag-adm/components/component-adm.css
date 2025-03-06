@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+aside::-webkit-scrollbar {
+  width: 10px;
+}
+
+aside::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #4d3cd1;
+  border-radius: 30px;
+}
+
+.img-sidebar {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+aside {
+  font-size: 1.2rem;
+  align-items: center;
+  background-color: #f4fbfb;
+  width: 20%;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  overflow-y: auto;
+}
+
+.first {
+  margin-top: 10%;
+  margin-bottom: 1%;
+}
+
+.second {
+  margin-top: 1%;
+}
+
+aside a {
+  color: #4d3cd1;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 35px;
+}
+
+aside ul li {
+  margin-top: 10px;
+  padding: 13px;
+}
+
+aside ul {
+  width: 100%;
+  margin-top: 15%;
+}
+
+aside ul a:hover {
+  background-color: #4d3cd1;
+  color: #fff;
+}
+
+header {
+  font-size: 1.3rem;
+  padding-top: 2%;
+  margin-left: 25%;
+}
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+aside li{
+  margin-left: 10%;
+}

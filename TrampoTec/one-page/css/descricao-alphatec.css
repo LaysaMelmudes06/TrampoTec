@@ -1,0 +1,52 @@
+#empresa {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  gap: 60px;
+  border-right: none;
+
+}
+
+.descricao-alphatec .align-imagens {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: cover;
+  height: 700px;
+}
+
+.descricao-alphatec .align-imagens .bolaazul {
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.align-imagens .logo-alpha {
+  object-fit: cover;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  width: 450px;
+  height: 400px;
+}
+
+
+
+
+.textos-alphatec .alinhar-texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textos-alphatec .alinhar-texto h4 {
+  width: 800px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 100;
+  text-align: start;
+  width:80%;
+}
+

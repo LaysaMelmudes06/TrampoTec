@@ -1,0 +1,385 @@
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin-left: 22%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.cima {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 18%;
+}
+
+.baixo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 16%;
+}
+
+main #alinhar {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  gap: 10px;
+  padding: 15px;
+}
+
+#align {
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid red;
+  background-color: red;
+  border-radius: 100px;
+  display: flex;
+  text-align: center;
+  padding: 20px 20px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+#align:hover {
+  font-size: 25px;
+  color: red;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid red;
+  background-color: white;
+  border-radius: 100px;
+  padding: 20px;
+}
+
+.formulario-cadastrar-vaga {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: 800ms ease-out anim-form;
+}
+
+.formulario-cadastrar-vaga form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  width: 60%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 45px;
+  padding: 40px;
+  gap: 15px;
+  z-index: 5;
+  justify-content: center;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-box input {
+  all: unset;
+  color: black;
+  padding: 1rem;
+  border: 2px solid #1d44b8;
+  border-radius: 10px;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 93%;
+  animation: 1500ms ease trans;
+}
+
+.input-box .input2 {
+  all: unset;
+  color: black;
+  padding: 1rem;
+  border: 2px solid #1d44b8;
+  border-radius: 10px;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 85%;
+  animation: 1500ms ease trans;
+}
+
+.input-box input:focus {
+  border: 2px solid #1d44b8;
+}
+p {
+  margin-top: -20px;
+}
+.input-box input:is(:focus, :valid) ~ .label-anim {
+  transform: translateY(-100%) scale(0.7);
+  background-color: #ffffff;
+  padding-inline: 0.3rem;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  left: 1%;
+}
+
+.label-anim {
+  position: absolute;
+  left: 2%;
+  color: black;
+  pointer-events: none;
+  transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.8rem;
+  animation: 1500ms ease transLabel;
+}
+
+form .alinhamento-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  gap: 20px;
+  padding: 10px;
+}
+
+form h1,
+h2 {
+  font-size: 22px;
+  animation: 2000ms ease trans;
+}
+h2 {
+  margin-top: 50px;
+}
+
+form .alinhamento-inputs div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  gap: 40px;
+}
+
+form .alinhamento-inputs span {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.formulario-cadastrar-vaga .alinhamento-inputs span .descricao {
+  width: 95%;
+  padding: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.selects:focus {
+  outline: none;
+}
+
+.selects {
+  border-radius: 10px;
+  border: 2px solid #1a3b9e;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  animation: 1350ms ease trans;
+  height: 60px;
+}
+
+.input-box-select {
+  margin-top: -32px;
+}
+
+.input-box-select label {
+  animation: 1500ms ease transLabel;
+}
+
+.botao-vaga {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 200px;
+  color: white;
+  background-color: rgb(10, 10, 87);
+  font-size: 15px;
+  cursor: pointer;
+  animation: 800ms linear trans;
+  transition: 200ms linear;
+}
+.botao-vaga:hover {
+  background-color: #1a3b9e;
+  scale: 1.05;
+}
+
+.body-inputs::-webkit-scrollbar {
+  width: 10px;
+}
+
+.body-inputs::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+.body-inputs::-webkit-scrollbar-thumb {
+  background-color: #555cb3;
+  border-radius: 50px;
+  border: 2px solid rgb(253, 253, 253);
+}
+
+.body-inputs::-webkit-scrollbar-track-piece {
+  background-color: #9a9999a1;
+  border-radius: 50px;
+  border: 2px solid rgb(253, 253, 253);
+}
+
+.caixa-add-requisito .body-inputs select {
+  padding: 9px;
+  border-radius: 25px;
+  border: 1px solid blue;
+  width: 70%;
+  animation: 400ms linear trans;
+  transform: translateY(20%);
+}
+
+@keyframes trans {
+  0% {
+    opacity: 0%;
+    transform: translateY(-200%);
+  }
+
+  50% {
+    opacity: 25%;
+  }
+
+  60% {
+    opacity: 50%;
+  }
+
+  70% {
+    opacity: 70%;
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes transLabel {
+  0% {
+    opacity: 0%;
+    transform: translateY(-600%);
+  }
+
+  50% {
+    opacity: 25%;
+  }
+
+  60% {
+    opacity: 50%;
+  }
+
+  70% {
+    opacity: 70%;
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes anim-form {
+  0% {
+    opacity: 0%;
+    transform: translateY(-15%);
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0%);
+  }
+}
+.linha {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  align-items: center;
+}
+
+.input-box2 input {
+  all: unset;
+  color: black;
+  padding: 1rem;
+  border: 2px solid #1d44b8;
+  border-radius: 10px;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 60%;
+  animation: 1500ms ease trans;
+}
+
+.input-box2 input:focus {
+  border: 2px solid #1d44b8;
+}
+
+.input-box2 input:is(:focus, :valid) ~ .label-anim2 {
+  transform: translateY(-100%) scale(0.7);
+  background-color: #ffffff;
+  padding-inline: 0.3rem;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  left: 18%;
+}
+
+.label-anim2 {
+  position: absolute;
+  left: 25%;
+  color: black;
+  pointer-events: none;
+  transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.8rem;
+  animation: 1500ms ease transLabel;
+}
+.label-anim0 {
+  position: absolute;
+  left: 25%;
+  bottom: 80%;
+  color: black;
+  pointer-events: none;
+  transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.8rem;
+  animation: 1500ms ease transLabel;
+  background-color: #ffffff;
+}

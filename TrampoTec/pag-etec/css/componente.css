@@ -1,0 +1,239 @@
+.side-bar {
+  height: 100%;
+  position: fixed;
+  background-color: rgb(248, 248, 248);
+  width: 20%;
+  font-size: 1.1rem;
+  height: 100%;
+  margin-top: -20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.side-bar nav {
+  display: flex;
+  flex-direction: column;
+}
+.side-bar nav .coluna-um {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.side-bar .coluna-um div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 200px;
+}
+.side-bar ul li a i {
+  margin-right: 15px;
+}
+
+.side-bar ul a {
+  text-decoration: none;
+  color: #4d3cd1;
+  padding: 10px;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.side-bar ul .coluna-um li {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 89%;
+  height: 40px;
+}
+
+.side-bar nav ul a:hover {
+  background-color: #4d3cd1;
+  color: #fff;
+  width: 100%;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.imagem-empresa {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+}
+.imagem-empresa img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.imagem-empresa .icon-foto {
+  font-size: 30px;
+  color: rgb(118, 114, 114);
+}
+
+.rightnav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  background-color: #ffffff00;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightnav .itens {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.rightnav a {
+  width: 40%;
+  padding: 0px 0px 15px 0px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000000;
+  z-index: 1;
+}
+
+.icon-notificacao {
+  color: blue;
+}
+
+.barra-pesquisa {
+  border-radius: 15px;
+  height: 30px;
+  border: 1px solid rgb(71, 71, 71);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 20px;
+}
+
+.barra-pesquisa input {
+  background-color: white;
+  border: none;
+  width: 70%;
+}
+.barra-pesquisa input:focus {
+  outline: none;
+}
+
+.itens select {
+  border: none;
+  width: 100px;
+  height: 20px;
+}
+.itens select {
+  outline-color: #00000000;
+}
+
+aside {
+  display: none;
+  background-color: #ffffff;
+  width: 40%;
+  padding: 25px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  overflow-y: scroll;
+  z-index: 5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+aside::-webkit-scrollbar {
+  width: 10px;
+}
+
+aside::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: rgba(117, 117, 117, 0.807);
+  border-radius: 30px;
+  border: 3px solid rgb(253, 253, 253);
+}
+
+.toogle .menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toogle .menu .menu {
+  display: flex;
+  color: rgb(44, 63, 150);
+  font-size: 35px;
+}
+.toogle:hover {
+  cursor: pointer;
+}
+aside a {
+  color: #010000;
+  text-decoration: none;
+  padding: 25px 50px 25px 0px;
+}
+aside ul li {
+  margin-top: 10px;
+  border-bottom: #000000 solid 1px;
+  padding: 10px;
+  list-style: none;
+
+  border-radius: 10px;
+}
+
+aside ul a:hover {
+  margin-left: 10px;
+}
+
+.card-email {
+  margin-top: 20px;
+  width: 400px;
+  height: 100px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card-corpo-email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-itens-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card .imagens-email {
+  display: flex;
+  align-items: center;
+}
+
+.imagem-aluno-email {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.email-notificacao {
+  font-size: 20px;
+}

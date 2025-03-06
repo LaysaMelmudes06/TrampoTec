@@ -1,0 +1,167 @@
+.align {
+    width: 100%;
+    position: absolute;
+}
+
+h1 {
+    color: #737373;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 2rem;
+}
+
+.recomendacoes {
+    display: flex;
+    /*justify-content: end; para deixar o pedido de cartas fixo*/
+    justify-content: center;
+    gap: 200px;
+    margin-top: 30px;
+}
+
+.pedido-carta {
+    width: 30%;
+    background-color: #333d80;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    /*position: fixed; para deixar o pedido de cartas fixo*/
+    justify-content: center;
+    margin-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*left: 0; para deixar o pedido de cartas fixo*/
+    height: 40%;
+    box-shadow: 0px 20px 18px -10px #4f4f4f;
+}
+
+.box-input {
+    display: flex;
+    border: 1px solid #000;
+    align-items: baseline;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+
+}
+.box-input label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333d80;
+}
+.box-input:nth-child(2) {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    margin-left: 5px;
+    width: 50%;
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: none;
+}
+textarea {
+    border-radius: 10px;
+    width: 93%;
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.pedido-carta h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.btn {
+    background-color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form {
+    width: 80%;
+}
+
+.card-carta {
+    background-color: rgb(232, 232, 232);
+    width: 420px;
+    padding: 25px;
+    border-radius: 32px;
+    box-shadow: 0px 20px 18px -10px #9b9b9b;
+}
+.cartas{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.header-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-card .etec,
+.prof {
+    display: flex;
+    line-height: 35px;
+}
+
+.prof h3 {
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+.etec h3 {
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+.etec,
+.prof {
+    letter-spacing: 0.5px;
+}
+.titulo-recomendacao{
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.8rem;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo-card p {
+    text-align: justify;
+    width: 90%;
+    margin: 15px auto 15px auto;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+.cima-esquerda{
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    z-index: 0;
+}
+.cima-direita{
+    width: 13%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}

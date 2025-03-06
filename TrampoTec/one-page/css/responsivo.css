@@ -1,0 +1,172 @@
+@media screen and (min-width:350px  ) and (max-width:550px) {
+    nav{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    main .texto-home .saiba-mais{
+        padding: 5px;
+        width: 80px;
+        font-size: 0.6rem;
+        margin-top: -20px;
+    }
+    main .texto-home{
+        width: 100%;
+        margin-left: 20px;
+    }
+    main .texto-home h1{
+        font-size: 1.1rem;
+        width: 150px;
+        text-align: start;
+    }
+    
+    main .imagem-home{
+        width: 100%;
+        height: 200px;
+        margin-left: 25px;
+        
+}    
+main .imagem-home img{
+    width: 150px;
+    height: 150px;
+    margin-top: 70px;
+
+}
+
+main .texto-home .imagem-astro{
+    display: none;
+}
+
+
+/*SOBRE*/
+
+.sobre{
+    width: 100%;
+
+}
+.sobre .align-imagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobre .align-imagens .img-bolinhas{
+    display: none;
+}
+.sobre .align-imagens img{
+    width: 200px;
+    height: 120px;
+    margin-top: 0px;
+    object-fit: cover;
+}
+.sobre .align-imagens .alinhar-texto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.sobre .align-imagens .alinhar-texto h4{
+    width: 200px;
+    font-size: 0.7rem;
+   margin-top:10px;
+   margin-left: -20px;
+   
+   
+}
+
+/*SERVIÇOS*/
+
+.servicos .titulo-servicos{
+    font-size: 0.9rem;
+}
+.servicos .fundo-roxo img{
+  display: none;
+}
+.servicos .align-card{
+    gap: 30px;
+    margin-top: 5px;
+}
+.servicos .align-card .card{
+    height: 120px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.servicos .align-card .card .texto-card {
+    margin-top: 5px;
+}
+.servicos .align-card .card .texto-card h4{
+    font-size: 0.6rem;
+}
+
+.servicos .align-card  .card .fundo-icon{
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+.servicos .align-card .card .fundo-icon i{
+    font-size: 40px;
+}
+
+/*SOBRE*/
+
+.descricao-alphatec{
+    gap: 10px;
+}
+.descricao-alphatec .align-imagens .bolaazul{
+    width: 100px;
+    height: 100px;
+    
+}
+.align-imagens .logo-alpha{
+    width: 150px;
+    
+    height: 150px;
+}
+
+.textos-alphatec .alinhar-texto h4{
+    font-size: 0.8rem;
+    width: 205px;
+    text-align: start;
+}
+
+/*CONTATO*/
+
+.area-contato{}
+
+.area-contato .informacoes-contato{
+    gap: 10px;
+    width: 280px;
+}
+.area-contato .informacoes-contato .informacao{
+    gap: 5px;
+}
+.area-contato .informacoes-contato .titulo{
+    font-size: 10px;
+}
+.area-contato .informacoes-contato .subtitulo{
+    font-size: 10px;
+}
+.area-contato .informacoes-contato .informacao i{
+    font-size: 10px;
+}
+.area-contato .informacoes-contato img{
+    width: 130px;
+    height: 100px;
+}
+.area-contato .inputs-contato form{
+    gap: 10px;
+    
+}
+.area-contato .inputs-contato form .alinhamento-textos-contatos {
+    gap: 0px;
+}
+.area-contato .inputs-contato form .alinhamento-textos-contatos .inputs-textos-contato{
+    width: 200px;
+}
+.area-contato .inputs-contato form .alinhamento-textos-contatos .inputs-textos-contato label{
+    font-size: 10px;
+}
+}
+

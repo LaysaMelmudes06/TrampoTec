@@ -1,0 +1,252 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin-left: 22%;
+  overflow: hidden;
+  padding: 10px;
+}
+
+main p {
+  margin-top: 3%;
+  font-size: 25px;
+}
+
+.cima {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -5;
+  width: 18%;
+}
+
+.baixo {
+  position: fixed;
+  bottom: 0;
+  right: 0%;
+
+  left: 20%;
+  z-index: -5;
+  width: 16%;
+  transform: rotateY(180deg);
+}
+
+.secao-busca {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.sistema-busca {
+  background-color: #555bb3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5%;
+  z-index: 1;
+}
+
+.btn-side {
+  background-color: rgb(255, 255, 255);
+  color: red;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-side:nth-child(2) {
+  margin-right: 7%;
+}
+
+.btn-side p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.filtro span {
+  color: rgb(0, 0, 0);
+
+  font-weight: 700;
+}
+
+.sistema-busca .align-filtro .filtro {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid gray;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sistema-busca .align-filtro .filtro i {
+  color: red;
+  margin: 0 12px 0 0;
+}
+
+.sistema-busca .align-filtro {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+}
+
+.sistema-busca form {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  width: 120px;
+  position: absolute;
+  margin-left: -115px;
+  border-radius: 10px;
+  gap: 20px;
+  border: 1px solid gray;
+  z-index: 1;
+}
+
+.sistema-busca form .align-form-filtro {
+  display: flex;
+  width: 100%;
+  margin-left: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.sistema-busca form .align-form-filtro input {
+  width: 100%;
+  display: flex;
+}
+
+.sistema-busca .modal-filtro {
+  background-color: rgb(255, 255, 255);
+  display: none;
+  z-index: 2;
+}
+
+.sistema-busca form .button-filtro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 10px;
+  background-color: #555cb3;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  padding: 10px;
+  width: 90px;
+  z-index: 2;
+}
+
+thead {
+  color: rgb(70, 70, 70);
+  font-weight: 600;
+}
+
+th {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+table {
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
+.infos {
+  border-bottom: 2px solid rgb(80, 80, 80);
+  padding: 10px;
+}
+
+table td {
+  z-index: 2;
+  text-align: center;
+
+  color: rgb(0, 0, 0);
+  padding: 25px;
+}
+
+.table-nome-candidato {
+  width: 200px;
+}
+
+.table-email-candidato {
+  word-break: break-all;
+  width: 200px;
+}
+
+.table-cnpj {
+  width: 200px;
+}
+
+tr:nth-last-child(1) {
+  border: none;
+}
+
+.sistema-busca .barra-pesquisa {
+  border-radius: 20px;
+  padding: 5px;
+  border: none;
+  margin-top: 0px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  position: absolute;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+
+.sistema-busca .barra-pesquisa input {
+  border: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.sistema-busca .barra-pesquisa input:focus {
+  outline: none;
+}
+
+.sistema-busca .barra-pesquisa {
+  border-radius: 20px;
+  padding: 5px;
+  border: none;
+  margin-top: 0px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: white;
+}
+
+.sistema-busca .barra-pesquisa input {
+  border: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.sistema-busca .barra-pesquisa input:focus {
+  outline: none;
+}

@@ -1,0 +1,408 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.imagem-1 {
+  position: fixed;
+  width: 20%;
+  object-fit: contain;
+  top: -60px;
+  right: -60px;
+  z-index: -5;
+}
+
+.imagem-2 {
+  position: fixed;
+  width: 13%;
+  left: 30px;
+  top: 150px;
+  z-index: -5;
+}
+
+.imagem-3 {
+  position: fixed;
+  width: 10%;
+  left: 0;
+  bottom: 0;
+  z-index: -5;
+}
+
+.modalidades {
+  font-size: 0.9em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem-4 {
+  position: fixed;
+  bottom: 0;
+  object-fit: cover;
+  right: 0;
+  width: 15%;
+  z-index: -5;
+}
+
+select {
+  width: 100%;
+  font-weight: 700;
+  border: none;
+  font-size: 1rem;
+}
+
+select {
+  cursor: pointer;
+}
+
+.filtro {
+  width: 100%;
+}
+
+.filtro-icon {
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  align-items: center;
+  gap: 10px;
+  animation: 400ms linear anim-left;
+}
+
+.filtro-icon i {
+  font-size: 2rem;
+}
+
+#contain-filtro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+
+#botao-filtro {
+  background-color: #0a3580;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #0a3580;
+  transition: 0.3s all ease-in-out;
+  animation: 400ms linear anim-right;
+}
+
+#botao-filtro:hover {
+  background-color: white;
+  transition: 0.3s all ease-in-out;
+  color: #0a3580;
+  border: 1px solid #0a3580;
+}
+
+h5 {
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+}
+
+#barra {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 3%;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding: 0px 50px;
+}
+
+#card {
+  background-color: rgb(232, 232, 232);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+  width: 350px;
+  height: 220px;
+  justify-content: center;
+  border: none;
+  padding: 20px;
+  animation: 400ms linear anim-card;
+}
+
+#conteudo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+#descricao-vaga {
+  color: #3d3b3b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+#job-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+#botao-vaga-modal {
+  background-color: #0a3580;
+  padding: 10px 8px;
+  color: white;
+  width: 150px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s all ease-in-out;
+}
+
+#botao-vaga-modal:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.455);
+  background-color: #0a3580d1;
+  transition: 0.3s all ease-in-out;
+}
+
+#modal-vaga {
+  border: none;
+  border-radius: 10px;
+  background-color: #0382ac;
+  color: #fff;
+  max-height: 100vh;
+}
+
+#botao-fechar {
+  border: none;
+  background-color: transparent;
+  transition: ease-in-out 0.2s;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#botao-fechar span {
+  color: red;
+  font-size: 30px;
+}
+
+#botao-fechar:hover {
+  scale: 1.1;
+  background-color: white;
+}
+
+#modal-cabeaca-footer {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#info-empresa {
+  display: flex;
+  flex-direction: column;
+}
+
+#infos-vaga-modal {
+  display: flex;
+  width: 100% !important;
+  align-items: center;
+  gap: 15px;
+}
+
+#div-img-modal {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 1px solid #0a3580;
+}
+
+#div-img-modal img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#sobre-empresa {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#info-titulo {
+  font-size: 30px;
+}
+
+#info-nome {
+  font-size: 20px;
+}
+
+#info-ano {
+  font-size: 15px;
+}
+
+#infos-vaga-requisito {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+
+#requisitos-vaga {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  max-height:35vh;
+  overflow-y: auto;
+}
+#requisitos-vaga::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+
+#requisitos-vaga::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 30px;
+  border: 3px solid #0382ac;
+}
+
+#container-infos {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 40px;
+  letter-spacing: 1px;
+  line-height: 19px;
+}
+
+#titulo2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+#descrição-vaga {
+  width: 60%;
+}
+
+#botao-candidatar {
+  background-color: #fff;
+  color: #1c82c6;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+#botao-candidatar:hover {
+  scale: 1.05;
+}
+
+#modal-footer {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+@keyframes anim-card {
+  0% {
+    opacity: 0%;
+    scale: 0.5;
+  }
+
+  70% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes anim-left {
+  0% {
+    opacity: 0%;
+    transform: translateX(-30%);
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+
+@keyframes anim-right {
+  0% {
+    opacity: 0%;
+    transform: translateX(30%);
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.col-md-3:nth-child(1) {
+  animation: 400ms linear anim-left;
+}
+
+.col-md-3:nth-child(2) {
+  animation: 400ms linear anim-left;
+}
+
+.col-md-3:nth-child(3) {
+  animation: 400ms linear anim-right;
+
+}
+
+.col-md-3:nth-child(4) {
+  animation: 400ms linear anim-right;
+}

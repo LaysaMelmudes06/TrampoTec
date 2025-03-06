@@ -1,0 +1,177 @@
+header h1 {
+  font-weight: 600;
+  font-size: 2.1rem;
+  margin-top: -40px;
+}
+.align-geral {
+  display: flex;
+}
+.dashboard {
+  width: 8%;
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+.align-card {
+  display: flex;
+
+  height: 430px;
+  flex-wrap: wrap;
+  width: 250px;
+}
+.align-card .card {
+  background-color: #182052;
+}
+.align-card2 .card {
+  z-index: 10;
+  background-color: #6d6bfa;
+}
+.align-card2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  width: auto;
+  margin-left: 20px;
+}
+.btn-relatorio {
+  padding: 12px;
+  width: 240px;
+  border: none;
+  border-radius: 10px;
+  background-color: #95afd8;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid #95afd8;
+  transition: 0.2s all ease-in-out;
+}
+.btn-relatorio:hover {
+  transition: 0.2s all ease-in-out;
+  background-color: white;
+  border: 2px solid #95afd8;
+  color: #95afd8;
+}
+
+main {
+  margin-left: 25%;
+}
+.card {
+  width: 190px;
+  height: 150px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: #4d3cd1;
+  transition: 200ms ease-in-out;
+}
+.card:hover {
+  scale: 1.05;
+}
+.card h3 {
+  width: 10px;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+}
+.card h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 25px;
+  font-weight: 600;
+}
+.header-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-card i {
+  color: #fff;
+  font-size: 1.6rem;
+  border: 4px solid #fff;
+  padding: 10px;
+  border-radius: 100%;
+}
+#empresas {
+  padding: 12px 15px 12px 15px;
+}
+#prof {
+  padding: 13px 10px 13px 10px;
+}
+#aluno {
+  padding: 10px 13px 10px 13px;
+}
+#etec {
+  padding: 12px 10px 12px 10px;
+}
+.dash-card {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+
+  width: 100%;
+
+  gap: 60px;
+  justify-content: center;
+}
+#chart_div {
+  width: 600px;
+  border-radius: 20px;
+  border: 3px solid red;
+  height: 400px;
+  padding: 5px;
+}
+#donutchart {
+  width: 90%;
+  height: 450px;
+  border-radius: 20px;
+  padding: 5px;
+  border: 3px solid red;
+}
+.cima {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -5;
+  width: 16%;
+}
+.align-graficos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: auto;
+}
+/*.baixo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+
+}*/
+a {
+  text-decoration: none;
+  height: 150px;
+}
+.align-pdf {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 40px;
+}
+.align-pdf button {
+  color: #182052;
+  border: 2px solid #182052;
+  padding: 10px 12px 10px 12px;
+  border-radius: 100%;
+  font-size: 3rem;
+  margin-right: 30px;
+  cursor: pointer;
+}
+#loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f000;
+  margin-left: 20%;
+}

@@ -1,0 +1,125 @@
+.formulario-adm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.formulario-adm form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    padding: 40px;
+    align-items: center;
+
+}
+
+
+main {
+    margin-left: 20%;
+}
+
+.text-green {
+    color: green;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.text-danger {
+    color: red;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.btn {
+    background-color: #1a3b9e;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 70%;
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.input-box input {
+    all: unset;
+    color: black;
+    padding: 1rem;
+    border: 2px solid #1d44b8;
+    border-radius: 10px;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 60%;
+}
+
+.input-box input:focus {
+    border: 2px solid #1d44b8;
+}
+
+.input-box input:is(:focus, :valid)~.label-anim {
+    transform: translateY(-140%) scale(0.7);
+    background-color: #ffffff;
+    padding-inline: 0.3rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    left: 20%;
+}
+
+.label-anim {
+    position: absolute;
+    left: 20%;
+    color: black;
+    pointer-events: none;
+    transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 0.8rem;
+}
+
+.secao-cadastro a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 25%;
+    font-size: 1.5rem;
+    margin-left: 0;
+
+}
+
+.secao-cadastro {
+    margin-bottom: 30px;
+}
+
+#icon-titulo {
+    font-size: 25px;
+    color: red;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid red;
+    border-radius: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }

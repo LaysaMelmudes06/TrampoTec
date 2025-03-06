@@ -1,0 +1,203 @@
+.side-bar {
+  height: 100%;
+  position: fixed;
+  background-color: #f4fbfb;
+  width: 20%;
+  font-size: 1.1rem;
+  top: 0;
+  font-size: 1.2rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  bottom: 100px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.side-bar .coluna-um {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 210px;
+}
+
+.side-bar ul a {
+  text-decoration: none;
+  color: #4d3cd1;
+  padding: 10px;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.side-bar ul .coluna-um li {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 89%;
+  height: 40px;
+}
+
+.side-bar nav ul a:hover {
+  background-color: #4d3cd1;
+  color: #fff;
+  width: 100%;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.imagem-logo {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100px;
+}
+.imagem-logo img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  margin-top: 12%;
+}
+.imagem-empresa a {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+}
+.imagem-empresa img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+  background-color: white;
+
+  border: none;
+}
+
+.imagem-empresa .icon-foto {
+  font-size: 30px;
+  color: rgb(118, 114, 114);
+}
+
+aside {
+  display: none;
+  background-color: #f1eded;
+  width: 40%;
+  padding: 25px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  overflow-y: scroll;
+  z-index: 100;
+  top: 0;
+}
+aside::-webkit-scrollbar {
+  width: 10px;
+}
+
+aside::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: rgba(117, 117, 117, 0.807);
+  border-radius: 30px;
+  border: 3px solid rgb(253, 253, 253);
+}
+
+.toogle .menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toogle .menu .menu {
+  display: flex;
+  color: rgb(198, 8, 8);
+  font-size: 35px;
+}
+.toogle:hover {
+  cursor: pointer;
+}
+aside a {
+  color: #010000;
+  text-decoration: none;
+  padding: 25px 50px 25px 0px;
+}
+aside ul li {
+  margin-top: 10px;
+  border-bottom: #000000 solid 1px;
+  padding: 10px;
+}
+
+aside ul a:hover {
+  margin-left: 10px;
+}
+
+.card-email {
+  margin-top: 20px;
+  width: 500px;
+  height: 100px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.card-corpo-email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-itens-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card .imagens-email {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.imagem-aluno-email {
+  width: 80px;
+  border-radius: 50px;
+  margin-right: 10px;
+
+  object-fit: cover;
+}
+
+.email-notificacao {
+  font-size: 20px;
+}

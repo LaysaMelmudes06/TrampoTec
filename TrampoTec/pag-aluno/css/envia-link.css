@@ -1,0 +1,136 @@
+body {
+  background-color: #182052;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cima {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 30%;
+}
+
+.baixo {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 35%;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+}
+
+.box-formulario {
+  background-color: #fff;
+  width: 350px;
+  height: 75%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 15px 15px 0px #00000091;
+  justify-content: center;
+}
+.title-login {
+  margin-bottom: 35px;
+}
+h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.8rem;
+  width: 260px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 800;
+  color: #43337c;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.item-form {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.div-input {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid;
+  margin-top: 15px;
+}
+.div-input input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.div-input label {
+  font-weight: 700;
+  color: #43337c;
+}
+label {
+  font-weight: 700;
+  color: #4f4f4f;
+}
+
+.botao {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #392b6b;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 3px solid #271e4b78;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.mensagem {
+  color: red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 70%;
+  margin-top: 20px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+.mensagem h2 {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.div-input .is-invalid {
+  border: 2px solid red;
+  display: flex !important;
+}
+.div-input + small {
+  color: red;
+  margin-top: 10px;
+  font-size: 12px;
+  width: 100%;
+  display: none;
+}
+.div-input .is-invalid + small {
+  display: flex !important;
+}
+.is-invalid {
+  display: flex !important;
+}

@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagem-3 {
+  position: fixed;
+  width: 10%;
+  right: 0;
+  bottom: 0;
+  z-index: -5;
+}
+
+.imagem-4 {
+  position: fixed;
+  object-fit: cover;
+  left: -50px;
+  top: 100px;
+  width: 20%;
+  z-index: -5;
+}
+
+#form-control {
+  width: 100%;
+  font-weight: 700;
+  border: none;
+  font-size: 1rem;
+}
+
+select {
+  cursor: pointer;
+}
+
+.filtro {
+  width: 100%;
+}
+
+.filtro-icon {
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  align-items: center;
+  gap: 10px;
+  animation: 400ms linear anim-left;
+}
+
+.filtro-icon i {
+  font-size: 2rem;
+}
+
+#contain-filtro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+
+#botao-filtro {
+  background-color: #0a3580;
+  animation: 400ms linear anim-right;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #0a3580;
+  transition: 0.3s all ease-in-out;
+}
+
+#botao-filtro:hover {
+  background-color: white;
+  transition: 0.3s all ease-in-out;
+  color: #0a3580;
+  border: 1px solid #0a3580;
+}
+
+h5 {
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+}
+
+#barra {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 4%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0a3580;
+  color: white;
+  border-radius: 20px;
+  width: 350px;
+  height: 160px;
+  border: none;
+  gap: 10px;
+  animation: 500ms linear anim-card;
+}
+
+.nao-aceito {
+  color: yellow;
+}
+
+.aceito {
+  color: rgb(0, 255, 13);
+  text-align: center;
+}
+
+.vaga {
+  font-size: 25px;
+  text-align: center;
+}
+
+.botao-excluir {
+  width: 330px;
+  display: flex;
+  justify-content: right;
+  align-items: start;
+  height: 150px;
+  position: absolute;
+}
+
+.botao-excluir a {
+  display: flex;
+  text-decoration: none;
+  color: red;
+  border-radius: 100px;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  width: 35px;
+  padding: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao-excluir a:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+.chat {
+  z-index: 5;
+}
+
+.chat button {
+  border: none;
+  background-color: transparent;
+}
+
+.chat button I {
+  color: white;
+  font-size: 35px;
+}
+
+.chat button I:hover {
+  color: rgb(35, 178, 35);
+  font-size: 35px;
+}
+
+@media (max-width: 410px) {
+  .botao-excluir {
+    width: 80%;
+  }
+}
+
+@keyframes anim-card {
+  0% {
+    opacity: 0%;
+    scale: 0.5;
+  }
+
+  70% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes anim-left {
+  0% {
+    opacity: 0%;
+    transform: translateX(-30%);
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+
+@keyframes anim-right {
+  0% {
+    opacity: 0%;
+    transform: translateX(30%);
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.col-md-3:nth-child(1) {
+  animation: 400ms linear anim-left;
+}
+
+.col-md-3:nth-child(2) {
+  animation: 400ms linear anim-left;
+}
+
+.col-md-3:nth-child(3) {
+  animation: 400ms linear anim-right;
+
+}
+
+.col-md-3:nth-child(4) {
+  animation: 400ms linear anim-right;
+}

@@ -1,0 +1,96 @@
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 0, 0, 0.807);
+  border-radius: 30px;
+  border: 3px solid rgb(253, 253,  253);
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7%;
+
+}
+main .texto-home {
+  flex-direction: column;
+  display: flex;
+  margin-top: 8%;
+  margin-left: 50px;
+  gap: 10px;
+  justify-content: center;
+  width: auto;
+}
+main .texto-home h1 {
+  font-size: 2.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 655px;
+  text-align: start;
+  flex-direction: column;
+  color: rgb(37, 37, 109);
+}
+main .texto-home .saiba-mais {
+  width: 160px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+main .imagem-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  float: inline-end;
+  height: 550px;
+  width: 100%;
+  margin-top: 9%;
+}
+
+main .imagem-home img {
+  height: 520px;
+  width: 560px;
+  object-fit: cover;
+  margin-top: 115px;
+  position: absolute;
+}
+main .texto-home .imagem-astro {
+  display: flex;
+
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  flex-direction: column;
+  padding-top: 60px;
+}
+main .texto-home .imagem-astro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: -100px;
+}
+main .imagem-home img {
+  object-fit: cover;
+  margin-top: 90px;
+  position: absolute;
+}
+main .texto-home p {
+  color: rgb(8, 8, 99);
+  font-weight: 700;
+}
+main .texto-home span {
+  color: rgba(255, 0, 0, 0.807);
+  font-weight: 700;
+}

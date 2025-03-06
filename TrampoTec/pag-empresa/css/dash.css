@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin-left: 10%;
+}
+
+.cima {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -5;
+  width: 18%;
+}
+
+.baixo {
+  position: fixed;
+  bottom: 0;
+  right: 0%;
+
+  left: 20%;
+  z-index: -5;
+  width: 16%;
+  transform: rotateY(180deg);
+}
+
+#content {
+  display: none;
+}
+
+#loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+}
+
+#loading img {
+  width: 100px;
+  /* Ajuste conforme necessário */
+  height: 100px;
+  /* Ajuste conforme necessário */
+  margin-right: 10px;
+}
+
+.cards-alunos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.card {
+  z-index: 1;
+  width: 260px;
+  height: 170px;
+  border-radius: 25px;
+  background-color: rgb(81, 63, 185);
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 20px;
+  color: white;
+  transition: all 0.5s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card-corpo {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card-itens {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icon-home {
+  display: flex;
+  align-items: start;
+  justify-content: right;
+}
+
+.icon-home i {
+  font-size: 50px;
+}
+
+.informacao {
+  font-size: 25px;
+  text-decoration: solid;
+}
+
+.numero {
+  font-size: 55px;
+  text-decoration: solid;
+}
+
+.container-imagens {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+
+.container-imagens .dash-fundo {
+  height: 330px;
+  object-fit: cover;
+}

@@ -1,0 +1,477 @@
+main {
+  margin-left: 20%;
+}
+
+main .align-itens {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+}
+
+main .align-itens .card .title-card {
+  margin-top: 0px;
+  color: #555cb3;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+main .align-itens .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+  width: 400px;
+  height: auto;
+  transition: 0.3s all ease-in-out;
+}
+
+main .align-itens .card .desc {
+  word-break: break-all;
+  width: 300px;
+  margin: 0px;
+  font-size: 0.9rem;
+}
+
+main .align-itens .card:hover {
+  transform: scale(1.02);
+  transition: 0.3s all ease-in-out;
+}
+
+main .align-itens .card .itens-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+main .align-itens .card .itens-card h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.tabela .align-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+}
+
+.tabela .align-links button {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid;
+  border-radius: 15px;
+  border: 1px solid #555cb3;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background-color: white;
+  color: #555cb3;
+  transition: 0.1s linear;
+  font-weight: 600;
+}
+
+.tabela .align-links button:hover {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  scale: 1.02;
+}
+
+.tabela {
+  border-radius: 15px;
+  border: none;
+  background-color: #555cb3;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+}
+
+.tabela p {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+main .align-itens table {
+  background-color: white;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  width: 600px;
+}
+
+th {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+main .align-itens .infos {
+  border-bottom: 1px solid rgb(80, 80, 80);
+}
+
+main .align-itens table td {
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+main .align-itens table td:nth-child(5) {
+  padding: 5px;
+}
+main .align-itens table td:nth-child(6) {
+  padding: 5px;
+}
+main .align-itens tr:nth-last-child(1) {
+  border: none;
+}
+
+td .container-perfil .img-perfil {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+td .container-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+td .container-perfil .img-perfil img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: none;
+  border-radius: 50%;
+}
+
+.icon-1 {
+  background-color: transparent;
+}
+
+.icon-2 {
+  background-color: transparent;
+}
+
+.icon-1 a {
+  color: green;
+  border-radius: 100px;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.icon-1 a:hover {
+  background-color: green;
+  color: white;
+}
+
+.icon-2 a {
+  text-decoration: none;
+}
+
+.icon-2 a i {
+  display: flex;
+  text-decoration: none;
+  color: red;
+  border-radius: 100px;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  width: 40px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-2 a i:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+.icon-3 {
+  background-color: transparent;
+  color: green;
+  border-radius: 100px;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  margin-left: -10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.icon-3:hover {
+  background-color: green;
+  color: white;
+}
+
+.voltar-pag {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.body-voltar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.body-voltar span h1 {
+  font-size: 25px;
+}
+
+#alinhar {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  width: 280px;
+  gap: 10px;
+  padding: 15px;
+}
+
+#align {
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid red;
+  background-color: red;
+  border-radius: 100px;
+  display: flex;
+  text-align: center;
+  padding: 20px 20px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+#align:hover {
+  font-size: 25px;
+  color: red;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid red;
+  background-color: white;
+  border-radius: 100px;
+  padding: 20px;
+}
+
+#modal-body {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  color: black;
+  font-family: "Poppins", sans-serif;
+
+  animation: 0.5s linear trans;
+  transform: translateY(1%);
+}
+
+@keyframes trans {
+  0% {
+    opacity: 0%;
+    transform: translateY(-15%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(1%);
+  }
+}
+
+#itens-curriculo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#content {
+  display: none;
+}
+
+#loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+}
+
+#loading img {
+  width: 100px;
+  /* Ajuste conforme necessário */
+  height: 100px;
+  /* Ajuste conforme necessário */
+  margin-right: 10px;
+}
+
+#itens-curriculo #align-modal {
+  display: flex;
+
+  padding-bottom: 30px;
+  padding-left: 60px;
+  align-items: center;
+  width: 100%;
+}
+
+#itens-curriculo #habilidades {
+  width: 100%;
+
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+#itens-curriculo #habilidades #itens-habilidades1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+#itens-curriculo #habilidades #itens-habilidades1 #itens {
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  width: 100%;
+  text-align: start;
+}
+
+#itens-curriculo #habilidades #itens-habilidades1 #title-habilidades {
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  text-align: start;
+  margin-top: 20px;
+
+  color: black;
+}
+
+#itens-curriculo #habilidades #itens-habilidades {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+#itens-curriculo #habilidades #itens-habilidades #itens {
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  width: 100%;
+  text-align: start;
+}
+
+#itens-curriculo #habilidades #itens-habilidades #title-habilidades {
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  text-align: start;
+  margin-top: 20px;
+
+  color: black;
+}
+
+#imagem-perfil-update {
+  width: 100%;
+  gap: 10px;
+  object-fit: cover;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+}
+
+#imagem-perfil-update #info1 #nome {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+  width: 100%;
+  text-align: start;
+  font-family: "Poppins", sans-serif;
+}
+
+#imagem-perfil-update #info1 #curso {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+
+  color: black;
+}
+
+#imagem-perfil-update #info1 #instituicao {
+  width: 100%;
+  text-align: start;
+
+  font-size: 0.9rem;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+#imagem-perfil-update #info1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+#imagem-perfil-update img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#modal {
+  width: 700px;
+  min-height: 800px;
+  height: auto;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+}

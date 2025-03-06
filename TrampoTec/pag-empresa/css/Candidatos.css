@@ -1,0 +1,557 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin-left: 22%;
+  overflow: hidden;
+  padding: 10px;
+  margin-top: 3%;
+}
+
+main p {
+  font-size: 25px;
+}
+h2 {
+  margin-left: 32%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cima {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -5;
+  width: 18%;
+}
+.baixo {
+  position: fixed;
+  bottom: 0;
+  right: 0%;
+
+  left: 20%;
+  z-index: -5;
+  width: 16%;
+  transform: rotateY(180deg);
+}
+
+.secao-busca {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  z-index: 1;
+}
+
+.sistema-busca {
+  background-color: #555bb3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5%;
+  z-index: 1;
+}
+
+.btn-side {
+  background-color: rgb(255, 255, 255);
+  color: red;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-side:nth-child(2) {
+  margin-right: 7%;
+}
+
+.btn-side p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.filtro span {
+  color: rgb(0, 0, 0);
+
+  font-weight: 700;
+}
+
+.sistema-busca .align-filtro .filtro {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid gray;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sistema-busca .align-filtro .filtro i {
+  color: red;
+  margin: 0 12px 0 0;
+}
+
+.sistema-busca .align-filtro {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+}
+
+.sistema-busca form {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  width: 120px;
+  position: absolute;
+  margin-left: -115px;
+  border-radius: 10px;
+  gap: 20px;
+  border: 1px solid gray;
+  z-index: 1;
+}
+
+.sistema-busca form .align-form-filtro {
+  display: flex;
+  width: 100%;
+  margin-left: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.sistema-busca form .align-form-filtro input {
+  width: 100%;
+  display: flex;
+}
+
+.sistema-busca .modal-filtro {
+  background-color: rgb(255, 255, 255);
+  display: none;
+  z-index: 2;
+}
+
+.sistema-busca form .button-filtro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 10px;
+  background-color: #555cb3;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  padding: 10px;
+  width: 90px;
+  z-index: 2;
+}
+
+thead {
+  color: rgb(70, 70, 70);
+  font-weight: 600;
+}
+
+th {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+table {
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
+.infos {
+  border-bottom: 2px solid rgb(80, 80, 80);
+  padding: 10px;
+}
+
+table td {
+  z-index: 2;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 25px;
+}
+
+.table-nome-candidato {
+  width: 200px;
+}
+
+.table-email-candidato {
+  word-break: break-all;
+  width: 230px;
+}
+
+.table-cnpj {
+  width: 300px;
+}
+
+tr:nth-last-child(1) {
+  border: none;
+}
+#modal-body {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins", sans-serif;
+
+  animation: 0.5s linear trans;
+  transform: translateY(1%);
+}
+
+@keyframes trans {
+  0% {
+    opacity: 0%;
+    transform: translateY(-15%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(1%);
+  }
+}
+dialog {
+  border: none;
+  background-color: transparent;
+}
+
+.align-card-indicacao .fechar-indicacao {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.align-card-indicacao .fechar-indicacao i {
+  font-size: 1.2rem;
+  color: red;
+  padding: 10px 12px 10px 12px;
+  transition: 0.2s all ease-in-out;
+  border: none;
+  border-radius: 100%;
+}
+.align-card-indicacao .fechar-indicacao i:hover {
+  background-color: red;
+  color: white;
+  padding: 10px 12px 10px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: 0.2s all ease-in-out;
+}
+
+.align-card-indicacao .botao-indicacao {
+  padding: 12px;
+  background-color: red;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 370px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  transition: 0.5s all ease-in-out;
+  border-radius: 10px;
+
+  border: 1px solid red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.botao-indicacao:hover {
+  transition: 0.5s all ease-in-out;
+  background-color: rgb(224, 5, 5);
+}
+.align-card-indicacao .align-botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.delete-vaga {
+  background-color: transparent;
+  padding: 0;
+}
+.table-email-aluno button {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+  font-size: 0.8rem;
+
+  padding: 10px 12px;
+  background-color: transparent;
+}
+#itens-curriculo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#itens-curriculo #align-modal {
+  display: flex;
+
+  padding-bottom: 30px;
+  padding-left: 60px;
+  align-items: center;
+  width: 100%;
+}
+
+#content {
+  display: none;
+}
+
+#loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+}
+
+#loading img {
+  width: 100px;
+  /* Ajuste conforme necessário */
+  height: 100px;
+  /* Ajuste conforme necessário */
+  margin-right: 10px;
+}
+
+#itens-curriculo #habilidades {
+  width: 100%;
+
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+#itens-curriculo #habilidades #itens-habilidades1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+#itens-curriculo #habilidades #itens-habilidades1 #itens {
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  width: 100%;
+  text-align: start;
+}
+
+#itens-curriculo #habilidades #itens-habilidades1 #title-habilidades {
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  text-align: start;
+  margin-top: 20px;
+
+  color: black;
+}
+#itens-curriculo #habilidades #itens-habilidades {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+#itens-curriculo #habilidades #itens-habilidades #itens {
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  width: 100%;
+  text-align: start;
+}
+#itens-curriculo #habilidades #itens-habilidades #title-habilidades {
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  text-align: start;
+  margin-top: 20px;
+
+  color: black;
+}
+#imagem-perfil-update {
+  width: 100%;
+  gap: 10px;
+  object-fit: cover;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+}
+#imagem-perfil-update #info1 #nome {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+  width: 100%;
+  text-align: start;
+  font-family: "Poppins", sans-serif;
+}
+
+#imagem-perfil-update #info1 #curso {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+
+  color: black;
+}
+#imagem-perfil-update #info1 #instituicao {
+  width: 100%;
+  text-align: start;
+
+  font-size: 0.9rem;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+#imagem-perfil-update #info1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+#imagem-perfil-update img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#modal {
+  width: 700px;
+  min-height: 800px;
+  height: auto;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+
+  flex-direction: column;
+}
+
+.sistema-busca .barra-pesquisa {
+  border-radius: 20px;
+  padding: 5px;
+  border: none;
+  margin-top: 0px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  position: absolute;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+
+.sistema-busca .barra-pesquisa input {
+  border: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.sistema-busca .barra-pesquisa input:focus {
+  outline: none;
+}
+
+dialog {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.align-card-indicacao .botao-indicacao {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 140px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: 0.2s all ease-in-out;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+.botao-indicacao:hover {
+  transition: 0.2s all ease-in-out;
+  background-color: rgb(5, 56, 224);
+}
+
+.align-card-indicacao .title-indicacao {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.align-card-indicacao {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 30px;
+  padding: 30px;
+  flex-direction: column;
+  height: 380px;
+  width: 300px;
+  background-color: white;
+}
+
+.icone-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icone-table i {
+  margin: 3px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.3rem;
+  gap: 10px;
+}
+
+#ver-mais {
+  color: white;
+  background-color: rgb(99, 99, 194);
+  border: 1px solid rgb(99, 99, 194);
+  padding: 13px;
+  text-align: center;
+}
+
+#ver-mais:hover {
+  color: rgb(99, 99, 194);
+  background-color: transparent;
+  border: 1px solid rgb(99, 99, 194);
+  padding: 13px;
+  text-align: center;
+  transform: scale(1.1);
+}
